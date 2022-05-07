@@ -45,6 +45,10 @@ async function run (){
             res.send(service);
         })
 
+        app.get('/hero', async(req, res)=>{
+            res.send('Testing for hero');
+        })
+
         // Post service
         app.post('/service', async(req, res)=>{
             const newService = req.body;
